@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 // react-bootstrap components
 import {
@@ -15,6 +15,24 @@ import {
 import Form from 'react-bootstrap/Form';
 
 function AddClient() {
+  const [item, setItem] = useState({ kindOfStand: "", another: "another" });
+
+  const { kindOfStand } = item;
+
+  const handleChange = e => {
+    e.persist();
+    console.log(e.target.value);
+
+    setItem(prevState => ({
+      ...prevState,
+      kindOfStand: e.target.value
+    }));
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    alert(`${kindOfStand}`);
+  };
   return (
     <>
       <Container fluid>
@@ -24,33 +42,21 @@ function AddClient() {
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>НАИМЕНОВАНИЕ</Form.Label>
         <Form.Control type="text"  placeholder="" />
-        <Form.Text className="text-muted">
-          Текст
-        </Form.Text>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>БИН</Form.Label>
         <Form.Control type="email" placeholder="" />
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>АДРЕС</Form.Label>
         <Form.Control type="text"  placeholder="" />
-        <Form.Text className="text-muted">
-          Текст
-        </Form.Text>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>ТЕЛЕФОН</Form.Label>
         <Form.Control type="text"  placeholder="" />
-        <Form.Text className="text-muted">
-          Текст
-        </Form.Text>
       </Form.Group>
       <Button variant="primary" type="submit">
-        Submit
+        Создать
       </Button>
     </Form>
         </Col>
@@ -59,26 +65,40 @@ function AddClient() {
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>ЛОГИН</Form.Label>
         <Form.Control type="text"  placeholder="" />
-        <Form.Text className="text-muted">
-          Текст
-        </Form.Text>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>ПАРОЛЬ</Form.Label>
         <Form.Control type="password" placeholder="" />
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
       </Form.Group>
       <Form.Group className="mb-3">
-        <Form.Select>
-          <option>Стандарт</option>
-          <option>Премиум</option>
-          <option>Люкс</option>
-        </Form.Select>
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
+      <form onSubmit={handleSubmit}>
+      <Form.Group controlId="kindOfStand">
+        <Form.Check
+          value="Премиум"
+          type="radio"
+          aria-label="radio 1"
+          label="Премиум"
+          onChange={handleChange}
+          checked={kindOfStand === "Премиум"}
+        />
+        <Form.Check
+          value="Стандарт"
+          type="radio"
+          aria-label="radio 2"
+          label="Стандарт"
+          onChange={handleChange}
+          checked={kindOfStand === "Стандарт"}
+        />
+        <Form.Check
+          value="Эконом"
+          type="radio"
+          aria-label="radio 2"
+          label="Эконом"
+          onChange={handleChange}
+          checked={kindOfStand === "Эконом"}
+        />
+      </Form.Group>
+    </form>
       </Form.Group>
     </Form>
         </Col>

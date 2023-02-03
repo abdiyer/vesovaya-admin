@@ -32,8 +32,8 @@ function Dashboard() {
                   </Col>
                   <Col xs="7">
                     <div className="numbers">
-                      <p className="card-category">Number</p>
-                      <Card.Title as="h4">150GB</Card.Title>
+                      <p className="card-category">Лог</p>
+                      <Card.Title as="h4">Сумма</Card.Title>
                     </div>
                   </Col>
                 </Row>
@@ -51,8 +51,8 @@ function Dashboard() {
                   </Col>
                   <Col xs="7">
                     <div className="numbers">
-                      <p className="card-category">Revenue</p>
-                      <Card.Title as="h4">$ 1,345</Card.Title>
+                      <p className="card-category">Расход</p>
+                      <Card.Title as="h4">Сумма</Card.Title>
                     </div>
                   </Col>
                 </Row>
@@ -70,7 +70,7 @@ function Dashboard() {
                   </Col>
                   <Col xs="7">
                     <div className="numbers">
-                      <p className="card-category">Errors</p>
+                      <p className="card-category">Ошибки</p>
                       <Card.Title as="h4">23</Card.Title>
                     </div>
                   </Col>
@@ -90,7 +90,7 @@ function Dashboard() {
                   </Col>
                   <Col xs="7">
                     <div className="numbers">
-                      <p className="card-category">Followers</p>
+                      <p className="card-category">Изменение</p>
                       <Card.Title as="h4">+45K</Card.Title>
                     </div>
                   </Col>
@@ -111,8 +111,8 @@ function Dashboard() {
                   </Col>
                   <Col xs="7">
                     <div className="numbers">
-                      <p className="card-category">Number</p>
-                      <Card.Title as="h4">150GB</Card.Title>
+                      <p className="card-category">Лог</p>
+                      <Card.Title as="h4">Сумма</Card.Title>
                     </div>
                   </Col>
                 </Row>
@@ -130,8 +130,8 @@ function Dashboard() {
                   </Col>
                   <Col xs="7">
                     <div className="numbers">
-                      <p className="card-category">Revenue</p>
-                      <Card.Title as="h4">$ 1,345</Card.Title>
+                      <p className="card-category">Расход</p>
+                      <Card.Title as="h4">Сумма</Card.Title>
                     </div>
                   </Col>
                 </Row>
@@ -149,7 +149,7 @@ function Dashboard() {
                   </Col>
                   <Col xs="7">
                     <div className="numbers">
-                      <p className="card-category">Errors</p>
+                      <p className="card-category">Ошибки</p>
                       <Card.Title as="h4">23</Card.Title>
                     </div>
                   </Col>
@@ -169,7 +169,7 @@ function Dashboard() {
                   </Col>
                   <Col xs="7">
                     <div className="numbers">
-                      <p className="card-category">Followers</p>
+                      <p className="card-category">Изменение</p>
                       <Card.Title as="h4">+45K</Card.Title>
                     </div>
                   </Col>
@@ -182,8 +182,7 @@ function Dashboard() {
           <Col md="4">
             <Card>
               <Card.Header>
-                <Card.Title as="h4">Email Statistics</Card.Title>
-                <p className="card-category">Last Campaign Performance</p>
+                <Card.Title as="h4">Статистика</Card.Title>
               </Card.Header>
               <Card.Body>
                 <div
@@ -200,9 +199,9 @@ function Dashboard() {
                 </div>
                 <div className="legend">
                   <i className="fas fa-circle text-info"></i>
-                  Open <i className="fas fa-circle text-danger"></i>
-                  Bounce <i className="fas fa-circle text-warning"></i>
-                  Unsubscribe
+                  Параметр 1 <i className="fas fa-circle text-danger"></i>
+                  Параметр 2 <i className="fas fa-circle text-warning"></i>
+                  Параметр 3
                 </div>
                 <hr></hr>
               </Card.Body>
@@ -211,8 +210,7 @@ function Dashboard() {
           <Col md="4">
             <Card>
               <Card.Header>
-                <Card.Title as="h4">Email Statistics</Card.Title>
-                <p className="card-category">Last Campaign Performance</p>
+                <Card.Title as="h4">Статистика</Card.Title>
               </Card.Header>
               <Card.Body>
                 <div
@@ -229,9 +227,9 @@ function Dashboard() {
                 </div>
                 <div className="legend">
                   <i className="fas fa-circle text-info"></i>
-                  Open <i className="fas fa-circle text-danger"></i>
-                  Bounce <i className="fas fa-circle text-warning"></i>
-                  Unsubscribe
+                  Параметр 1 <i className="fas fa-circle text-danger"></i>
+                  Параметр 2 <i className="fas fa-circle text-warning"></i>
+                  Параметр 3
                 </div>
                 <hr></hr>
               </Card.Body>
@@ -240,8 +238,7 @@ function Dashboard() {
           <Col md="4">
             <Card>
               <Card.Header>
-                <Card.Title as="h4">Email Statistics</Card.Title>
-                <p className="card-category">Last Campaign Performance</p>
+                <Card.Title as="h4">Статистика</Card.Title>
               </Card.Header>
               <Card.Body>
                 <div
@@ -258,9 +255,9 @@ function Dashboard() {
                 </div>
                 <div className="legend">
                   <i className="fas fa-circle text-info"></i>
-                  Open <i className="fas fa-circle text-danger"></i>
-                  Bounce <i className="fas fa-circle text-warning"></i>
-                  Unsubscribe
+                  Параметр 1 <i className="fas fa-circle text-danger"></i>
+                  Параметр 2 <i className="fas fa-circle text-warning"></i>
+                  Параметр 3
                 </div>
                 <hr></hr>
               </Card.Body>

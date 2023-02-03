@@ -36,7 +36,7 @@ function Sidebar({ color, image, routes }) {
       />
       <div className="sidebar-wrapper">
         <div style={{'height':'100px', 'marginBottom':'50px'}}>
-          <img src={require("assets/logo.png")} style={{'width':'250px', 'height':'187px',}} alt=""/>
+          <img src={require("assets/logo.png")} style={{'width':'220px', 'height':'170px', 'marginLeft':'20px'}} alt=""/>
         </div>
         <Nav>
           {routes.map((prop, key) => {

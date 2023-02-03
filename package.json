@@ -1,6 +1,7 @@
 {
   "name": "light-bootstrap-dashboard-react",
   "version": "2.0.1",
+  "homepage": "http://abdiyer.github.io/vesovaya-admin",
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.2",
     "bootstrap": "4.6.0",
@@ -31,7 +32,9 @@
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "compile:scss": "sass src/assets/scss/light-bootstrap-dashboard-pro-react.scss src/assets/css/light-bootstrap-dashboard-pro-react.css",
     "minify:scss": "sass src/assets/scss/light-bootstrap-dashboard-pro-react.scss src/assets/css/light-bootstrap-dashboard-pro-react.min.css --style compressed",
-    "build:scss": "npm run compile:scss && npm run minify:scss"
+    "build:scss": "npm run compile:scss && npm run minify:scss",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -48,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
