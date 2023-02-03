@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vesovaya-admin/static/css/main.8e0f2e0b.css",
-    "main.js": "/vesovaya-admin/static/js/main.f00541ab.js",
+    "main.js": "/vesovaya-admin/static/js/main.568ed583.js",
     "static/media/photo-1431578500526-4d9613015464.jpeg": "/vesovaya-admin/static/media/photo-1431578500526-4d9613015464.0c528dc7193509e0eef6.jpeg",
     "static/media/fa-solid-900.svg": "/vesovaya-admin/static/media/fa-solid-900.0454203f26b33fc02e2b.svg",
     "static/media/fa-brands-400.svg": "/vesovaya-admin/static/media/fa-brands-400.991c1c761fc31f9c3252.svg",
@@ -33,6 +33,6 @@
   },
   "entrypoints": [
     "static/css/main.8e0f2e0b.css",
-    "static/js/main.f00541ab.js"
+    "static/js/main.568ed583.js"
   ]
 }
